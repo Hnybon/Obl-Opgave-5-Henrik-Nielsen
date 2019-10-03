@@ -59,16 +59,16 @@ namespace OblServer
 
                 if (strFromClient == "HentAlle")
                 {
-                    string jsonstr = JsonConvert.SerializeObject(bøger);
-                    toClient.WriteLine(jsonstr);
-                    Console.WriteLine(jsonstr);
-                    //foreach (Bog i in bøger)
-                    //{
-                    //    //string jsonstr = JsonConvert.SerializeObject(i);
-                    //    //toClient.WriteLine();
-                    //    //toClient.WriteLine(jsonstr);
-                    //    //Console.WriteLine(jsonstr);
-                    //}
+                    //string jsonstr = JsonConvert.SerializeObject(bøger);
+                    //toClient.WriteLine(jsonstr);
+                    //Console.WriteLine(jsonstr);
+                    foreach (Bog i in bøger)
+                    {
+                        string jsonstr = JsonConvert.SerializeObject(i);
+                        toClient.WriteLine();
+                        toClient.WriteLine(jsonstr);
+                        Console.WriteLine(jsonstr);
+                    }
                 }
 
                 else if (strFromClient == "Hent")
