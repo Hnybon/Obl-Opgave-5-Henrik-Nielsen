@@ -1,0 +1,14 @@
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Server\obj\Debug\netcoreapp2.1\OblServer.csprojAssemblyReference.cache
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Server\obj\Debug\netcoreapp2.1\OblServer.csproj.CoreCompileInputs.cache
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Server\obj\Debug\netcoreapp2.1\OblServer.AssemblyInfoInputs.cache
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Server\obj\Debug\netcoreapp2.1\OblServer.AssemblyInfo.cs
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Server\bin\Debug\netcoreapp2.1\OblServer.deps.json
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Server\bin\Debug\netcoreapp2.1\OblServer.runtimeconfig.json
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Server\bin\Debug\netcoreapp2.1\OblServer.runtimeconfig.dev.json
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Server\bin\Debug\netcoreapp2.1\OblServer.dll
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Server\bin\Debug\netcoreapp2.1\OblServer.pdb
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Server\bin\Debug\netcoreapp2.1\Library.dll
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Server\bin\Debug\netcoreapp2.1\Library.pdb
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Server\obj\Debug\netcoreapp2.1\OblServer.csproj.CopyComplete
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Server\obj\Debug\netcoreapp2.1\OblServer.dll
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Server\obj\Debug\netcoreapp2.1\OblServer.pdb

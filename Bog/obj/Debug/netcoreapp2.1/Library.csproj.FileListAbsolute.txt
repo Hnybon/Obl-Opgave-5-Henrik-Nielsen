@@ -1,0 +1,9 @@
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Bog\bin\Debug\netcoreapp2.1\Library.deps.json
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Bog\bin\Debug\netcoreapp2.1\Library.dll
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Bog\bin\Debug\netcoreapp2.1\Library.pdb
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Bog\obj\Debug\netcoreapp2.1\Library.csprojAssemblyReference.cache
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Bog\obj\Debug\netcoreapp2.1\Library.csproj.CoreCompileInputs.cache
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Bog\obj\Debug\netcoreapp2.1\Library.AssemblyInfoInputs.cache
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Bog\obj\Debug\netcoreapp2.1\Library.AssemblyInfo.cs
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Bog\obj\Debug\netcoreapp2.1\Library.dll
+C:\Users\hnybo\source\repos\Obl Opgave 5 Henrik Nielsen\Bog\obj\Debug\netcoreapp2.1\Library.pdb
