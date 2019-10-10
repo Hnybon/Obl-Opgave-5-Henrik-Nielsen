@@ -54,36 +54,76 @@ namespace OblServer
                 //toClient.WriteLine(Fuckit);
                 string strFromClient = fromClient.ReadLine();
                 string data = fromClient.ReadLine();
-
+                if (strFromClient != null)
+                {
+                    strFromClient = strFromClient.ToLower();
+                }
                 //string response = "";
 
-                if (strFromClient == "HentAlle")
+                if (String.IsNullOrWhiteSpace(strFromClient))
                 {
-                    //string jsonstr = JsonConvert.SerializeObject(bøger);
-                    //toClient.WriteLine(jsonstr);
-                    //Console.WriteLine(jsonstr);
-                    foreach (Bog i in bøger)
-                    {
-                        string jsonstr = JsonConvert.SerializeObject(i);
-                        toClient.WriteLine();
-                        toClient.WriteLine(jsonstr);
-                        Console.WriteLine(jsonstr);
-                    }
+                    //error
                 }
 
-                else if (strFromClient == "Hent")
+                if (strFromClient == "hentalle")
                 {
-                    string Jsonstr = JsonConvert.SerializeObject(bøger.Find(i => i.Isbn13 == data));
-                    toClient.WriteLine(Jsonstr);
-                    Console.WriteLine(Jsonstr);
+                    DoHentAlle(toClient);
+                    ////string jsonstr = JsonConvert.SerializeObject(bøger);
+                    ////toClient.WriteLine(jsonstr);
+                    ////Console.WriteLine(jsonstr);
+                    //foreach (Bog i in bøger)
+                    //{
+                    //    string jsonstr = JsonConvert.SerializeObject(i);
+                    //    toClient.WriteLine();
+                    //    toClient.WriteLine(jsonstr);
+                    //    Console.WriteLine(jsonstr);
+                    //}
                 }
 
-                else if (strFromClient == "Gem")
+                else if (strFromClient == "hent")
                 {
-                    bøger.Add(JsonConvert.DeserializeObject<Bog>(data));
+                    DoHentEn(data, toClient);
+                    //string Jsonstr = JsonConvert.SerializeObject(bøger.Find(i => i.Isbn13 == data));
+                    //toClient.WriteLine(Jsonstr);
+                    //Console.WriteLine(Jsonstr);
+                }
+
+                else if (strFromClient == "gem")
+                {
+                    DoGem(data, toClient);
+                    //bøger.Add(JsonConvert.DeserializeObject<Bog>(data));
+                }
+
+                else
+                {
+                    //error
                 }
             }
+        }
 
+        private void DoHentAlle(StreamWriter toClient)
+        {
+            foreach (Bog i in bøger)
+            {
+                string jsonstr = JsonConvert.SerializeObject(i);
+                toClient.WriteLine();
+                toClient.WriteLine(jsonstr);
+                Console.WriteLine(jsonstr);
+                toClient.Flush();
+            }
+        }
+
+        private void DoHentEn(string data, StreamWriter toClient)
+        {
+            string Jsonstr = JsonConvert.SerializeObject(bøger.Find(i => i.Isbn13 == data));
+            toClient.WriteLine(Jsonstr);
+            Console.WriteLine(Jsonstr);
+            toClient.Flush();
+        }
+
+        private void DoGem(string nyBog, StreamWriter toClient)
+        {
+            bøger.Add(JsonConvert.DeserializeObject<Bog>(nyBog));
         }
     }
 }
